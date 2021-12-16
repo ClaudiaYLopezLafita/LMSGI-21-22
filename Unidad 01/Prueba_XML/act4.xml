@@ -1,0 +1,75 @@
+<cluster>
+    <nodo ip="222.555.6.0" nombre="gato1">
+        <MV nombre="MV1" SO="W10">
+            <interfadR>
+                <ip> 123.456.4.5</ip>
+                <mac>223.662.3.6</mac>
+            </interfadR>
+        </MV>
+        <MV nombre="MV2" SO="W10">
+            <interfadR>
+                <ip>195.235.1.1</ip>
+                <mac>225.255.211.2</mac>
+            </interfadR>
+            <interfadR>
+                <ip>195.235.2.3</ip>
+                <mac>912.595.3.5</mac>
+            </interfadR>
+            <interfadR>
+                <ip>195.235.1.0</ip>
+                <mac>225.255.211.0</mac>
+            </interfadR>
+        </MV>
+    </nodo>
+
+    <nodo ip="222.555.6.0" nombre="gato1">
+        <MV nombre="MV1" SO="W10" >
+            <interfadR></interfadR>
+        </MV>
+        <MV nombre="MV2" SO="W10">
+            <interfadR>
+                <ip>126.656.2.0</ip>
+                <mac>123.624.6.1</mac>
+            </interfadR>
+        </MV>
+    </nodo>
+
+    <nodo ip="222.555.6.0" nombre="gato3">
+        <MV nombre="MV1.1" SO="W10">
+            <interfadR>
+                <ip>169.524.3.2</ip>
+                <mac>195.234.3.2</mac>
+            </interfadR>
+        </MV>
+        <MV nombre="MV2.1" SO="W10">
+            <interfadR>
+                <ip>123.159.8.4</ip>
+                <mac>1235.566.2.6</mac>
+            </interfadR>
+        </MV>
+    </nodo>
+
+    <nodo ip="222.555.6.0" nombre="gato4">
+        <MV nombre="MV1.2" SO="W10">
+            <interfadR>
+                <ip>896.457.2.3</ip>
+                <mac>654.231.9.3</mac>
+            </interfadR>
+        </MV>
+        <MV nombre="MV2.2" SO="W10">
+            <interfadR>
+                <ip>195.235.1.1</ip>
+                <mac>225.255.211.2</mac>
+            </interfadR>
+            <interfadR>
+                <ip>195.235.1.2</ip>
+                <mac>223.622.3.4</mac>
+            </interfadR>
+            <interfadR>
+                <ip>195.235.1.0</ip>
+                <mac>225.255.211.0</mac>
+            </interfadR>
+        </MV>
+    </nodo>
+
+</cluster>
