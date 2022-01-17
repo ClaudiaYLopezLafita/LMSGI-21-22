@@ -1,0 +1,51 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+
+<!-- Ejercicio 1: se quiere montar una BD de un curso donde se guardan
+    las asignaturas, de ellas guardamos su nombre, los alumnos que toman 
+    esa asignatura y el profesor que la imparte, de los alumnos y profesor
+    queremos guardar su nonmbre y apellido-->
+
+<!DOCTYPE curso SYSTEM "Ejer_curso.dtd">
+
+<curso>
+    <asignatura>
+        <nombre_asignatura> Matematicas </nombre_asignatura>
+
+        <alumnos>
+            <alumno>
+                <nombre> Manuel </nombre>
+                <apellido> Gómez </apellido>
+            </alumno>
+
+            <alumno>
+                <nombre> Pilar </nombre>
+                <apellido> Dorado </apellido>
+            </alumno>
+        </alumnos>
+
+        <profesor>
+            <nombre> Juan </nombre>
+            <apellido> López </apellido>
+        </profesor>
+
+    </asignatura>
+
+    <asignatura>
+        <codigo> BLG4500 </codigo>
+        <alumnos>
+            <alumno>
+                <nombre> Teresa </nombre>
+                <apellido> Lafita </apellido>
+            </alumno>
+
+            <alumno>
+                <nombre> Claudia </nombre>
+                <apellido> Lafita </apellido>
+            </alumno>
+        </alumnos>
+        <profesor>
+            <nombre> Miguel </nombre>
+            <apellido> Campos </apellido>
+        </profesor>
+    </asignatura>
+</curso>
