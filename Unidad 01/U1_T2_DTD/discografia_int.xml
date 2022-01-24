@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Escribe un archivo XML y su correspondiente DTD (interno y externo), que permitan modelar 
+los siguientes datos:
+• Una discográfica quiere tener una base de datos de su colección de discos.
+• Para cada disco, quiere guardar su título, el/los intérpretes, y el número de pistas.
+• Para cada intérprete, quiere guardar el nombre y apellidos, así como su rol o función si 
+se conoce (ej. solista, guitarrista, …)
+* Para cada pista, se quiere almacenar el nombre de la canción y su duración.
+
+Entrega:
+1. Diagrama de árbol
+2. Archivo discografica_int.xml con DTD interna
+3. Archivo discografica_ext.xml y DTD externa discográfica_ext.dtd-->
+
+<!DOCTYPE discografia [
+    <!ELEMENT discografia (discos)>
+    <!ELEMENT discos (disco+)>
+    <!ELEMENT disco (titulo, interpretes, num_pista)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT interpretes (interprete+)>
+    <!ELEMENT interprete (nombre, apellidos, (rol?| funcion?)) >
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT rol (#PCDATA)>
+    <!ELEMENT funcion (#PCDATA)>
+    <!ELEMENT num_pista (pista+)>
+    <!ELEMENT pista (nombre_cancion,duracion)>
+    <!ELEMENT nombre_cancion (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+]>
+
+<discografia>
+    <discos>
+        <disco>
+            <titulo></titulo>
+            <interpretes>
+                <interprete>
+                    <nombre></nombre>
+                    <apellidos></apellidos>
+                    <funcion> </funcion>
+                </interprete>
+
+                <interprete>
+                    <nombre></nombre>
+                    <apellidos></apellidos>
+                    <funcion> </funcion>
+                </interprete>
+                
+            </interpretes>
+            <num_pista>
+                <pista>
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+            </num_pista>
+        </disco>
+    </discos>
+</discografia>
