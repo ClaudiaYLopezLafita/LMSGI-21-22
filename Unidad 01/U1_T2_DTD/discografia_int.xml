@@ -16,7 +16,7 @@ Entrega:
 <!DOCTYPE discografia [
     <!ELEMENT discografia (discos)>
     <!ELEMENT discos (disco+)>
-    <!ELEMENT disco (titulo, interpretes, num_pista)>
+    <!ELEMENT disco (titulo, interpretes, pistas)>
     <!ELEMENT titulo (#PCDATA)>
     <!ELEMENT interpretes (interprete+)>
     <!ELEMENT interprete (nombre, apellidos, (rol?| funcion?)) >
@@ -24,8 +24,9 @@ Entrega:
     <!ELEMENT apellidos (#PCDATA)>
     <!ELEMENT rol (#PCDATA)>
     <!ELEMENT funcion (#PCDATA)>
-    <!ELEMENT num_pista (pista+)>
+    <!ELEMENT pistas (pista+)>
     <!ELEMENT pista (nombre_cancion,duracion)>
+          <!ATTLIST pista num_pista CDATA #REQUIRED>
     <!ELEMENT nombre_cancion (#PCDATA)>
     <!ELEMENT duracion (#PCDATA)>
 ]>
@@ -48,12 +49,20 @@ Entrega:
                 </interprete>
                 
             </interpretes>
-            <num_pista>
-                <pista>
+            <pistas>
+                <pista num_pista = "">
                     <nombre_cancion> </nombre_cancion>
                     <duracion> </duracion>
                 </pista>
-            </num_pista>
+                <pista num_pista = "">
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+                <pista num_pista = "">
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+            </pistas>
         </disco>
     </discos>
 </discografia>
