@@ -1,0 +1,26 @@
+<!--Crea un documento DTD externo asociado al siguiente documento XML de forma que sea válido. Se
+deben tener en cuenta las siguientes características:
+•El número de artículo (n_art) es un valor único por artículo y es obligatorio.
+•La cantidad del artículo puede no aparecer.
+•La unidad de medida puede no aparecer, pero si lo hace debe tomar el valor "Sistema
+Internacional".
+•Un artículo puede no tener ofertas o disponer de varias.
+•El tipo de marca puede no aparecer, y tomar los valores "nacional" o "internacional". -->
+
+
+<!ELEMENT supermercado (articulo+)>
+<!ELEMENT articulo (descripcion, marca, medida, seccion, oferta*, perecedero?)>
+    <!ATTLIST articulo n_art ID #REQUIRED>
+    <!ATTLIST articulo cantidad CDATA #IMPLIED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+    <!ATTLIST marca tipo (nacional | internacional) #IMPLIED>
+<!ELEMENT medida (#PCDATA)>
+    <!ATTLIST medida unidad CDATA "Sistema Internacional" >
+<!ELEMENT seccion (#PCDATA)>
+<!ELEMENT oferta (#PCDATA)>
+<!ELEMENT perecedero (caducidad?)>
+<!ELEMENT caducidad (#PCDATA)>
+
+<!-- Anotaciones en el atributo unidad, al tener que poner por valor un numero por defecto, se debe
+de quitar el #IMPLIED-->

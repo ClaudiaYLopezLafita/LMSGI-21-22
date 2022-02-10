@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="letras">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([a-z])*"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
+
+
+<!-- Realizar los cambios necesarios en el código del ejemplo anterior para que "letras" pueda tomar por
+valor uno o más pares (+) de letras, y cada par de letras deberá estar formado por una letra
+mayúscula seguida de otra minúscula. Por ejemplo, "HoLa" sería admitido, pero no lo
+sería "Hola", "HOLa", "hola", etc.-->
+
+<!-- SOLUCION; para empezar el operador de cardinalidad se debe cambiar po + dado que queremoa que
+    queremos que aparezca al menos a una vez, despues si queremos que se vayan intercalando 
+    minusculas y mayusculas simplemente debemos de indicar el siguiente patron:
+    
+    [a-z][A-Z] con el cual indicamos que el primer caracter es miniscula y el segundo es mayuscula
+    
+    para que se puedan repetir simplemente incluimos el patron en un parentsis y con el opereadpr de 
+    cardinalidad + 
+    
+    ([a-z][A-Z])+
+    ->

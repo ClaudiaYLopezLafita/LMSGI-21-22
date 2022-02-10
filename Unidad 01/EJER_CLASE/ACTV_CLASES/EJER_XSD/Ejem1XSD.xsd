@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- El elemento padre SIEMPRE ES XS:SCHEMA-->
+
+<xs:schema
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    elementFormDefault="quialified">
+    <xs:element name="puertaCerrada" type="boolean" default="false"/>
+    <xs:element name="puertaAbierta" type="boolean" fixed="verdadero"/>
+</xs:schema>

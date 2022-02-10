@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Crea un documento DTD externo asociado al siguiente documento XML de forma que sea válido. Se
+deben tener en cuenta las siguientes características:
+•El número de artículo (n_art) es un valor único por artículo y es obligatorio.
+•La cantidad del artículo puede no aparecer.
+•La unidad de medida puede no aparecer, pero si lo hace debe tomar el valor "Sistema
+Internacional".
+•Un artículo puede no tener ofertas o disponer de varias.
+•El tipo de marca puede no aparecer, y tomar los valores "nacional" o "internacional". -->
+
+<!DOCTYPE supermercado SYSTEM "Ej1.dtd">
+
+<supermercado>
+    <articulo n_art="articulo1" cantidad="300">
+        <descripcion>Yogurt</descripcion>
+        <marca tipo="nacional">Danone</marca>
+        <medida unidad="Sistema Internacional">200 ml</medida>
+        <seccion>Lacteos</seccion>
+    </articulo>
+    
+    <articulo n_art="articulo2">
+        <descripcion>Queso fresco</descripcion>
+        <marca tipo="nacional">Burgo de Arias</marca>
+        <medida>250 gr</medida>
+        <seccion>Lacteos</seccion>
+        <oferta>Lote descuento</oferta>
+        <perecedero>
+            <caducidad>febrero de 2022</caducidad>
+        </perecedero>
+    </articulo>
+</supermercado>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Definir un elemento "clave" que pueda tomar por valor exactamente diez caracteres, los cuales
+podrán ser letras mayúsculas o minúsculas de la "a" a la "z", o dígitos del "0" al "9". Por ejemplo,
+serán válidos los valores siguientes: "abcde12345", "Clave55ABC", "1A2b3c4D5f", etc.
+Proponer dos soluciones:
+
+1. Utilizando las facetas xs:pattern y xs:length .
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="clave">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:length value="10"/>
+                <xs:pattern value="[a-zA-Z0-9]*"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

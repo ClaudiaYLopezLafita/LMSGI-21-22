@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Crea un XSD externo asociado al siguiente documento XML de forma que sea válido.
+Deberás tener en cuenta las siguientes restricciones:
+•
+•
+•
+Los carnets están compuesto de una letra en mayúscula y 4 dígitos.
+Los posibles parentescos son (Hijo, Hija, Padre, Madre, Otro).
+El email no puede tener una longitud mayor a 250 caracteres.-->
+
+<relacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej3.xsd">
+    <persona sexo="hombre" carnet="A1111">
+        <nombre>Luis Martin</nombre>
+        <email>luis@hotmail.com</email>
+        <parentesco tipo="Padre"/>
+    </persona>
+    <persona sexo="mujer" carnet="B2222">
+        <nombre>Laura Martin</nombre>
+        <email>laura@hotmail.com</email>
+        <parentesco tipo="Hija"/>
+    </persona>
+    <persona carnet="C3333">
+        <nombre>Raul Gonzalez</nombre>
+        <email>raul@hotmail.com</email>
+        <email>raulin@gmail.com</email>
+    </persona>
+</relacion>

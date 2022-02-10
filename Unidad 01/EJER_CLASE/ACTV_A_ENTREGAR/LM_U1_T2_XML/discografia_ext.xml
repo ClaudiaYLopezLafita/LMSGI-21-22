@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Escribe un archivo XML y su correspondiente DTD (interno y externo), que permitan modelar 
+los siguientes datos:
+• Una discográfica quiere tener una base de datos de su colección de discos.
+• Para cada disco, quiere guardar su título, el/los intérpretes, y el número de pistas.
+• Para cada intérprete, quiere guardar el nombre y apellidos, así como su rol o función si 
+se conoce (ej. solista, guitarrista, …)
+* Para cada pista, se quiere almacenar el nombre de la canción y su duración.
+
+Entrega:
+1. Diagrama de árbol
+2. Archivo discografica_int.xml con DTD interna
+3. Archivo discografica_ext.xml y DTD externa discográfica_ext.dtd-->
+
+<!DOCTYPE discografia SYSTEM "discografia.dtd">
+
+<discografia>
+    <discos>
+        <disco>
+            <titulo></titulo>
+            <interpretes>
+                <interprete>
+                    <nombre></nombre>
+                    <apellidos></apellidos>
+                    <funcion> </funcion>
+                </interprete>
+
+                <interprete>
+                    <nombre></nombre>
+                    <apellidos></apellidos>
+                    <funcion> </funcion>
+                </interprete>
+                
+            </interpretes>
+            <pistas>
+                <pista num_pista = "">
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+                <pista num_pista = "">
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+                <pista num_pista = "">
+                    <nombre_cancion> </nombre_cancion>
+                    <duracion> </duracion>
+                </pista>
+            </pistas>
+        </disco>
+    </discos>
+</discografia>

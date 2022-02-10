@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="vehiculo" type="tipoDeVehiculo">
+    </xs:element>
+    <xs:simpleType name="tipoDeVehiculo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="barco"/>
+            <xs:enumeration value="bicicleta"/>
+            <xs:enumeration value="tre"/>
+            <xs:enumeration value="coche"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

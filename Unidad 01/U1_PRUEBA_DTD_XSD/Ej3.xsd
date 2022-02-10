@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Crea un XSD asociado al siguiente documento XML de forma que sea válido, cumpliendo los
+siguientes requerimientos:
+• El elemento teléfono será un entero y dicho elemento podrá aparecer entre 0 y 5 veces.
+• El elemento dirección podrá aparecer 1 o 2 veces.
+• El elemento número será un entero entre 0 y 200.
+• El elemento provincia sólo podrá contener Sevilla o Huelva.
+• El atributo dni es obligatorio, y será una plantilla de 8 números y una letra mayúscula.
+• El elemento edad será opcional.-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="direccion" maxOccurs="2" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="calle" type="xs:string"/>
+                                        <xs:element name="numero" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="200"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="ciudad" type="xs:string"/>
+                                        <xs:element name="provincia" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Sevilla"/>
+                                                    <xs:enumeration value="Huelva"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="telefono" type="xs:integer" maxOccurs="5" minOccurs="0"/>
+                            <xs:element name="edad" type="xs:integer" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="dni">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="\d{8}[A-Z]"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

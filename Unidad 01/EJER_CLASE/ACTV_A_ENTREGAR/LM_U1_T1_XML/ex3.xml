@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ENUNCIADO: Usando XML crea un fichero (ex3.xml) El fichero nos servirá para representar el directorio 
+    de direcciones de una empresa. Para organizar dicho directorio debo guardar los distintos 
+    edificios que componen una empresa. De los edificios la información que nos interesa es 
+    la dirección y el número de plantas. Dentro de cada edificio debemos guardar información de las plantas, 
+    su número y el número cuadrados de cada uno de ellas.
+Una vez ya estemos dentro de las plantas debemos guardar la información  de los empleados. 
+    De ellos guardaremos su puesto, sus datos personales y la extensión telefónica de su puesto.
+El archivo contendrá al menos 3 edificios de al menos 3 plantas cada uno y al menos 5 empleados 
+por planta.-->
+
+<!-- SUPUESTOS: Se crean etiquetas que presentan la lista de edificios, que tiene una empresa, donde iran dentro
+las etiquetas de los edificios independientemente y otra etiqueta para las plantas y los empleados con la misma estructura-->
+
+<empresa>
+    <edificios>
+        <edicifio>
+            <direccion>  Calle Matahacas, 32   </direccion>
+            <num_plantas>   3    </num_plantas>
+            <plantas>
+                <planta>
+                    <numero> 1 </numero>
+                    <mts_cuadrados> 70  </mts_cuadrados>
+                    <empleados>
+                    <empleado>
+                        <datos_personales>
+                            <nombre> Ernestos </nombre>
+                            <apellido1> Gutierrez </apellido1>
+                            <apellido2> Santillana </apellido2>
+                        </datos_personales>
+                        <ext_telefono> 6985 </ext_telefono>
+                    </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> María </nombre>
+                                <apellido1> Sosa </apellido1>
+                                <apellido2> Hermoso </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6986 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Cristian </nombre>
+                                <apellido1> Gómez </apellido1>
+                                <apellido2> Dorado </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6987 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Emilio </nombre>
+                                <apellido1> Serrano </apellido1>
+                                <apellido2> Vazquez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6987 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Patricia </nombre>
+                                <apellido1> Goya </apellido1>
+                                <apellido2> Fernandez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6988 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 2 </numero>
+                    <mts_cuadrados> 70 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Claudia </nombre>
+                                <apellido1> Lopez </apellido1>
+                                <apellido2> Lafita </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6991 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Carlos </nombre>
+                                <apellido1> Cuevas </apellido1>
+                                <apellido2> Garcia </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6992 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Gema </nombre>
+                                <apellido1> Sanchez </apellido1>
+                                <apellido2> Hermoso </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6993 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Gimenez </nombre>
+                                <apellido1> Gimenez </apellido1>
+                                <apellido2> Gimenez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6994 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Juan Antonio </nombre>
+                                <apellido1> Dorado </apellido1>
+                                <apellido2> Heristo </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6994 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 3 </numero>
+                    <mts_cuadrados> 70 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Marta </nombre>
+                                <apellido1> Lopez </apellido1>
+                                <apellido2> Perez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6901 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Juan </nombre>
+                                <apellido1> Lopez </apellido1>
+                                <apellido2> Hurtado </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6902 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Rafael </nombre>
+                                <apellido1> Huerto </apellido1>
+                                <apellido2> Cebolla </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6903 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Angeles </nombre>
+                                <apellido1> Rodriguez </apellido1>
+                                <apellido2> Mora </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6904 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Pedro </nombre>
+                                <apellido1> Solares </apellido1>
+                                <apellido2> Gonzalez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 6905 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+            </plantas>
+        </edicifio>
+
+        <edicifio>
+            <direccion>   Advenida Colon, 3 </direccion>
+            <num_plantas>  3  </num_plantas>
+            <plantas>
+                <planta>
+                    <numero> 1 </numero>
+                    <mts_cuadrados> 85 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> David </nombre>
+                                <apellido1> Ruiz </apellido1>
+                                <apellido2> Santos </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7770 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Miguel </nombre>
+                                <apellido1> Dominguez </apellido1>
+                                <apellido2> Alvarez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7771 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Alejandro </nombre>
+                                <apellido1> Ortega </apellido1>
+                                <apellido2> Nuñez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7772 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Pedro  </nombre>
+                                <apellido1> Castillo </apellido1>
+                                <apellido2> Medina </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7773 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Jesus </nombre>
+                                <apellido1> Delgado </apellido1>
+                                <apellido2> Morales </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7774 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 2 </numero>
+                    <mts_cuadrados> 85 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ana </nombre>
+                                <apellido1> Medina </apellido1>
+                                <apellido2> Jimenez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7710 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Jose Luis </nombre>
+                                <apellido1> Delgado </apellido1>
+                                <apellido2> Gil </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7711 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Javier </nombre>
+                                <apellido1> Gil </apellido1>
+                                <apellido2> Molina </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7712 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Josefa </nombre>
+                                <apellido1> Ortega </apellido1>
+                                <apellido2> Alvarez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7713 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ana Maria </nombre>
+                                <apellido1> Marin </apellido1>
+                                <apellido2> Jimenez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7714 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 3 </numero>
+                    <mts_cuadrados> 80 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Helena </nombre>
+                                <apellido1> Arquez </apellido1>
+                                <apellido2> Pío </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7720 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Sara </nombre>
+                                <apellido1> Bonilla </apellido1>
+                                <apellido2> Gago </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7721 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Jessica </nombre>
+                                <apellido1> Reina </apellido1>
+                                <apellido2> Hermoso </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7722 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Cristina </nombre>
+                                <apellido1> Fernandez </apellido1>
+                                <apellido2> Japon </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7723 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Santiago </nombre>
+                                <apellido1> Fiances </apellido1>
+                                <apellido2> Asencio </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7724 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+            </plantas>
+        </edicifio>
+
+        <edicifio>
+            <direccion> Calle Conde de Arraizabal, 4 </direccion>
+            <num_plantas>   4    </num_plantas>
+            <plantas>
+                <planta>
+                    <numero> 1 </numero>
+                    <mts_cuadrados> 60 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ramon </nombre>
+                                <apellido1> Cano</apellido1>
+                                <apellido2> Flores </apellido2>
+                            </datos_personales>
+                            <ext_telefono>7071 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Clara </nombre>
+                                <apellido1> Saenz </apellido1>
+                                <apellido2> Hermosilla </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7072 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Daniel </nombre>
+                                <apellido1> Merinero </apellido1>
+                                <apellido2> de los Santos </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7073 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Zacarias </nombre>
+                                <apellido1> Lopez  </apellido1>
+                                <apellido2> Garcia </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7074 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Maria </nombre>
+                                <apellido1> Clemente </apellido1>
+                                <apellido2> Anaya </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7075 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 2 </numero>
+                    <mts_cuadrados> 60 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Fátima </nombre>
+                                <apellido1> Tahire</apellido1>
+                                <apellido2> Hermoso </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7570 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Mara </nombre>
+                                <apellido1> Arambarri </apellido1>
+                                <apellido2> Japon </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7571 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Candela </nombre>
+                                <apellido1> Soto </apellido1>
+                                <apellido2> Campo </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7572 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Carmen </nombre>
+                                <apellido1> Campo </apellido1>
+                                <apellido2> Caceres </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7573 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Adrian </nombre>
+                                <apellido1> Lopez </apellido1>
+                                <apellido2> Postigo </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7574 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+
+                <planta>
+                    <numero> 3 </numero>
+                    <mts_cuadrados> 60 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Rosa </nombre>
+                                <apellido1> Ortiz </apellido1>
+                                <apellido2> Rufian </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7870 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Esperanza </nombre>
+                                <apellido1> Flores </apellido1>
+                                <apellido2> Giraldez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7871 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ester </nombre>
+                                <apellido1> Romero </apellido1>
+                                <apellido2> Garcia </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7872 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Marina </nombre>
+                                <apellido1> Campos </apellido1>
+                                <apellido2> Arena </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7873 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ana </nombre>
+                                <apellido1> Barrero </apellido1>
+                                <apellido2> Lafita </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7874 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+                <planta>
+                    <numero> 4 </numero>
+                    <mts_cuadrados> 60 </mts_cuadrados>
+                    <empleados> 
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Rosa </nombre>
+                                <apellido1> Ortiz </apellido1>
+                                <apellido2> Rufian </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7970 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Esperanza </nombre>
+                                <apellido1> Flores </apellido1>
+                                <apellido2> Giraldez </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7971 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ester </nombre>
+                                <apellido1> Romero </apellido1>
+                                <apellido2> Garcia </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7972 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Marina </nombre>
+                                <apellido1> Campos </apellido1>
+                                <apellido2> Arena </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7973 </ext_telefono>
+                        </empleado>
+                        <empleado>
+                            <datos_personales>
+                                <nombre> Ana </nombre>
+                                <apellido1> Barrero </apellido1>
+                                <apellido2> Lafita </apellido2>
+                            </datos_personales>
+                            <ext_telefono> 7974 </ext_telefono>
+                        </empleado>
+                    </empleados>
+                </planta>
+            </plantas>
+        </edicifio>
+    </edificios>
+</empresa>

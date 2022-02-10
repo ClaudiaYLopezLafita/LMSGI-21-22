@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Una discográfica quiere tener una base de datos de su colección de discos.
+• Para cada disco, quiere guardar su código, título, el/los intérpretes, y el número de pistas.
+• El código constará de una letra mayúscula que puede ser R (rock), P (pop), C (clásica) u O(otra),
+seguida de 3 dígitos. (Ejemplo: P032)
+• Para cada intérprete, quiere guardar el nombre y apellidos (obligatorio), así como su rol o
+función si se conoce (ej. solista, guitarrista, …)
+• Para cada pista, se quiere almacenar el nombre de la canción y su duración.
+• Cada elemento/atributo debe definirse con el tipo más adecuado a los datos que contiene.-->
+
+<!-- ANOTACIONES: codigo de disco, rol del artista, numero y numero_total son atributos y por lo tanto en el arbol 
+no aparece en el arbol. numero_total es un atributo de disco e indica el numero total de pistas que presenta, pero numero
+solo al numero que corresponde cada pista-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+    <xs:element name="discografia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="discos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="disco" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="interpretes">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="interprete" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="nombre" type="xs:string"/>
+                                                            <xs:element name="apellidos" type="xs:string" minOccurs="1"/>
+                                                        </xs:sequence>
+                                                        <xs:attribute name="rol" type="xs:string" use="optional"/>
+                                                    </xs:complexType>   
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="pistas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="pista">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="cancion" type="xs:string"/>
+                                                                <xs:element name="duracion" type="xs:time"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="numero" type="xs:integer" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="numero_total" type="xs:integer" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" use="required">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[RPCO]\d{3}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+</xs:schema>

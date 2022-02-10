@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Se quiere definir un lenguaje de marcas para representar los resultados de una liga de fútbol. 
+    La información que se quiere almacenar de cada partido es:
+• el nombre del equipo local
+• el nombre del equipo visitante
+• los goles marcados por el equipo local
+• los goles marcados por el equipo visitante
+
+Ej con una DTD en la que los goles sean atributos -->
+
+<!DOCTYPE ligaFutbol [
+    <!ELEMENT ligaFutbol (partidos)*>
+    <!ELEMENT partidos (equipos)>
+    <!ELEMENT equipos (equipoLocal, equipoVisitante)>
+    <!ELEMENT equipoLocal (nombreLocal)>
+        <!ATTLIST equipoLocal gol CDATA #REQUIRED>
+    <!ELEMENT nombreLocal (#PCDATA)>
+    <!ELEMENT equipoVisitante (nombreVisitante)>
+        <!ATTLIST equipoVisitante gol CDATA #REQUIRED>
+    <!ELEMENT nombreVisitante (#PCDATA)>
+]>
+
+<ligaFutbol>
+    <partidos>
+        <equipos>
+            <equipoLocal gol="0">
+                <nombreLocal> Nottingham Presa </nombreLocal>
+            </equipoLocal>
+            <equipoVisitante gol="1">
+                <nombreVisitante> Inter de Mitente </nombreVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partidos>
+
+    <partidos>
+        <equipos>
+            <equipoLocal gol="3">
+                <nombreLocal> Vodka Juniors </nombreLocal>
+            </equipoLocal>
+            <equipoVisitante gol="2">
+                <nombreVisitante> Sparta da Risa </nombreVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partidos>
+
+    <partidos>
+        <equipos>
+            <equipoLocal gol="4">
+                <nombreLocal> Water de Múnich </nombreLocal>
+            </equipoLocal>
+            <equipoVisitante gol="2">
+                <nombreVisitante> Esteaua es del grifo </nombreVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partidos>
+</ligaFutbol>

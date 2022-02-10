@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- A partir del siguiente DTD, elabora un XML con al menos tres elementos con datos ficticios para el
+que sea válido:-->
+
+<!DOCTYPE libreria SYSTEM "Ej2.dtd">
+
+<libreria catalogo="PRIVADO">
+    <libro titulo="Mis gatos viajeros" editorial="Gatitos S.L" autor="Misifu"/>
+    <revista marca="GatoWorld">
+        <numero> 142 </numero>
+        <titular> Los gatos viajeros mas famosos </titular>
+        <editorial> Gatitos S.L </editorial>
+    </revista>
+    <periódico fecha="01/01/01" nombre="NewsCAT" version_web="http://newscat.com"/>
+</libreria>

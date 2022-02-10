@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="respuesta">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[ABCDE]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
+
+<!-- otra manera seria mediante el siguiente patron [A|B|C|D|E]-->
+
+<!-- en caso de no quere usar la restriccion pattern podemos usar una restriccion enumeration
+en la cual podemos indicar con un xs:enumeration tomaria como valor
+    <xs:element name="respuesta">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="A"/>
+                    <xs:enumeration value="B"/>
+                    <xs:enumeration value="C"/>
+                    <xs:enumeration value="D"/>
+                    <xs:enumeration value="E"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+-->

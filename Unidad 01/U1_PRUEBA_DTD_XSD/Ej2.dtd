@@ -1,0 +1,18 @@
+<!-- A partir del siguiente DTD, elabora un XML con al menos tres elementos con datos ficticios para el
+que sea válido:-->
+
+<!ELEMENT libreria (libro|revista|periódico)+>
+<!ATTLIST libreria catalogo CDATA #REQUIRED>
+<!ELEMENT libro EMPTY>
+<!ATTLIST libro titulo CDATA #REQUIRED>
+<!ATTLIST libro editorial CDATA #REQUIRED>
+<!ATTLIST libro autor CDATA #REQUIRED>
+<!ELEMENT revista (numero, titular?, editorial)>
+<!ATTLIST revista marca CDATA #REQUIRED>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT titular (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT periódico EMPTY>
+<!ATTLIST periódico fecha CDATA #REQUIRED>
+<!ATTLIST periódico nombre CDATA #REQUIRED>
+<!ATTLIST periódico version_web CDATA #IMPLIED>

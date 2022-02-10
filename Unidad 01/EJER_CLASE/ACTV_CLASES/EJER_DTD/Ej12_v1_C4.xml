@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Se quiere definir un lenguaje de marcas para representar los resultados de una liga de fútbol.
+     La información que se quiere almacenar de cada partido es:
+• el nombre del equipo local
+• el nombre del equipo visitante
+• los goles marcados por el equipo local
+• los goles marcados por el equipo visitante
+
+Ej con una DTD en la que no haya atributos, sino únicamente etiquetas -->
+
+<!DOCTYPE ligaFutbol [
+    <!ELEMENT ligaFutbol (partido)*>
+    <!ELEMENT partido (equipos)*>
+    <!ELEMENT equipos (equipoLocal, equipoVisitante)>
+    <!ELEMENT equipoLocal (nombreLocal,golLocal)>
+    <!ELEMENT nombreLocal (#PCDATA)>
+    <!ELEMENT golLocal (#PCDATA)>
+    <!ELEMENT equipoVisitante (nombreVisitante, golVisitante)>
+    <!ELEMENT nombreVisitante (#PCDATA)>
+    <!ELEMENT golVisitante (#PCDATA)>
+]>
+
+<ligaFutbol>
+    <partido>
+        <equipos>
+            <equipoLocal>
+                <nombreLocal> Nottingham Presa </nombreLocal>
+                <golLocal> 0 </golLocal>
+            </equipoLocal>
+
+            <equipoVisitante>
+                <nombreVisitante> Inter de Mitente </nombreVisitante>
+                <golVisitante> 1 </golVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partido>
+
+     <partido>
+        <equipos>
+            <equipoLocal>
+                <nombreLocal> Vodka Juniors </nombreLocal>
+                <golLocal> 3 </golLocal>
+            </equipoLocal>
+
+            <equipoVisitante>
+                <nombreVisitante> Sparta da Risa </nombreVisitante>
+                <golVisitante> 3 </golVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partido>
+
+     <partido>
+        <equipos>
+            <equipoLocal>
+                <nombreLocal> Water de Múnich </nombreLocal>
+                <golLocal> 4 </golLocal>
+            </equipoLocal>
+
+            <equipoVisitante>
+                <nombreVisitante>  Esteaua es del grifo</nombreVisitante>
+                <golVisitante> 2 </golVisitante>
+            </equipoVisitante>
+        </equipos>
+    </partido>
+</ligaFutbol>
