@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda>
+    <cd>
+        <titulo> </titulo>
+        <artista> </artista>
+        <pais> </pais>
+        <compañia_discografica> </compañia_discografica>
+        <precio> </precio>
+        <anio_oublicacion> </anio_oublicacion>
+    </cd>
+</tienda>

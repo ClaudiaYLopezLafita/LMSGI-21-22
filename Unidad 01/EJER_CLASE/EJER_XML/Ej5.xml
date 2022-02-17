@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arboles> 
+    <especie>
+        <nombre_cientifico> </nombre_cientifico>
+        <nombre_comun> </nombre_comun>
+        <vegetacion> </vegetacion>
+        <altura> </altura>
+        <forma_estructura> </forma_estructura>
+        <color_primaver> </color_primaver>
+        <resistencia_heladas> </resistencia_heladas>
+    </especie>
+
+    <especie>
+        <nombre_cientifico> </nombre_cientifico>
+        <nombre_comun> </nombre_comun>
+        <vegetacion> </vegetacion>
+        <altura> </altura>
+        <forma_estructura> </forma_estructura>
+    </especie>
+
+    <especie>
+        <nombre_cientifico> </nombre_cientifico>
+        <nombre_comun> </nombre_comun>
+        <color_primaver> </color_primaver>
+        <resistencia_heladas> </resistencia_heladas>
+    </especie>
+
+    <especie>
+        <nombre_cientifico> </nombre_cientifico>
+        <nombre_comun> </nombre_comun>
+        <vegetacion> </vegetacion>
+        <altura> </altura>
+        <forma_estructura> </forma_estructura>
+        <color_primaver> </color_primaver>
+        <resistencia_heladas> </resistencia_heladas>
+    </especie>
+
+    <especie>
+        <nombre_cientifico> </nombre_cientifico>
+        <nombre_comun> </nombre_comun>
+        <vegetacion> </vegetacion>
+        <altura> </altura>
+        <forma_estructura> </forma_estructura>
+        <color_primaver> </color_primaver>
+        <resistencia_heladas> </resistencia_heladas>
+    </especie>
+</arboles>

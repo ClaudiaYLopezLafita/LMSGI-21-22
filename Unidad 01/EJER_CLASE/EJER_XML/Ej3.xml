@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<carta>
+    <plato>
+        <nombre> Gofres Belgas </nombre>
+        <precio> 5.95 </precio>
+        <descripcion> Calentitos con nata montada y virutas </descripcion>
+        <calorias>650</calorias>
+    </plato>
+     <plato>
+        <nombre> Gofres Belgas con fresa </nombre>
+        <precio> 7.95 </precio>
+        <descripcion> calentitos con nata montada y virutas con fresas cortadas </descripcion>
+        <calorias> 780 </calorias>
+    </plato>
+     <plato>
+        <nombre> Gofres Belgas con frutas del bosque </nombre>
+        <precio>8.95</precio>
+        <descripcion></descripcion>
+        <calorias> 900 </calorias>
+    </plato>
+     <plato>
+        <nombre> Tostada francesa </nombre>
+        <precio>4.50</precio>
+        <descripcion> calentitos con nata montada y virutas con arandanos y moras cortadas </descripcion>
+        <calorias> 500 </calorias>
+    </plato>
+     <plato>
+        <nombre> Desayuno de dia </nombre>
+        <precio>6.95</precio>
+        <descripcion>Croissant con jamon y queso y caffe</descripcion>
+        <calorias> 450 </calorias>
+    </plato>
+</carta>

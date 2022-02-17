@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <libros> 
+    <libro id="quijote"> 
+    <titulo>El Quijote</titulo> 
+    <autor nombre="cervantes" apellido="cervantes"> 
+    <descripcion>Es el m<ejor libro de cervantes.</descripcion> 
+</libro] 
+</Libros>-->
+
+<!-- Errores detectados:
+El valor "cervantes" es un atributo de nombre y debe ir entre comillas.
+No se permiten atributos repetidos.
+La etiqueta autor debe cerrarse.
+Las etiquetas son sensibles a las mayúsculas y también la etiqueta raíz. no debe cerrase </Libros> sino </libros>.
+Una etiqueta de cierre termina con >.
+
+<libros> 
+    <libro id="quijote"> 
+        <titulo>El Quijote</titulo> 
+        <autor nombre="cervantes" > </autor>
+        <descripcion>Es el mejor libro de cervantes.</descripcion> 
+    </libro>
+</libros>
+-->
