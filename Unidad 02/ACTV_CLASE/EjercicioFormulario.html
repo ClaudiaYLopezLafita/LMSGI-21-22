@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Prueba de Formulario</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">HOJA DE INSCRIPCIÓN</h1>
+    <h1 style="text-align:center">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <form method="post" action="destination.html">
+        <fieldset style="background-color: rgb(157, 177, 214);">
+            <legend style="border: 1px solid black; background-color: white"> Datos Personales </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                        </td>
+                        <td>
+                            <label for="apellidos">Apellidos:</label>
+                        </td>
+                        <td>
+                            <label for="dni">DNI</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre">
+                        </td>
+                        <td>
+                            <input type="text" name="apellido">
+                        </td>
+                        <td>
+                            <input type="text" name="dni">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="localidad">Localidad Nacimiento:</label>
+                        </td>
+                        <td>
+                            <label for="provinvia">Provincia:</label>
+                        </td>
+                        <td>
+                            <label for="fecha">Fecha Nacimiento:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="localidad">
+                        </td>
+                        <td>
+                                <select name="provincia">
+                                    <optgroup label="Andalucia">
+                                        <option value="S" selected> Sevilla</option>
+                                        <option value="H">Huelva</option>
+                                        <option value="C"> Cadiz </option>
+                                        <option value="G" > Granada</option>
+                                        <option value="M">Málaga</option>
+                                        <option value="C"> Cordoba </option>
+                                        <option value="J" > Jaén</option>
+                                        <option value="A">Almeria</option>
+                                    </optgroup>
+                                </select>
+                        </td>
+                        <td>
+                            <input type="date" name="fecha">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="direccion">Direccion:</label>
+                        </td>
+                        <td>
+                            <label for="cp">Codigo Postal:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="direccion">
+                        </td>
+                        <td>
+                            <input type="text" name="cp">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset style="background-color: lemonchiffon;">
+            <legend style="border: 1px solid black; background-color: white"> Forma de Accesos</legend>
+            <p>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" name="modoEntrada" /> Directo
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <input type="radio" name="tipo" /> Bachillerato LOG modalidad
+                            <input type="text">
+                        </li>
+                        <li>
+                            <input type="radio" name="tipo" /> Bachillerato Experimental
+                        </li>
+                        <li>
+                            <input type="radio" name="tipo"> COU. Opción
+                            <input type="text">
+                        </li>
+                        <li>
+                            <input type="radio" name="tipo"> FP2
+                        </li>
+                        <li>
+                            <input type="radio" name="tipo"> Otros (especifiquece)
+                            <input type="text">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" name="modoEntrada"> Prueba Libre
+                </li>
+            </ul>
+            </p>
+        </fieldset>
+        <fieldset style="background-color: pink;">
+            <legend style="border: 1px solid black; background-color: white"> Documentos Adjuntados </legend>
+            <p>
+                <label for="documentos">
+                    <input type="checkbox" name="documentos" /> Fotocopia DNI
+                    <input type="checkbox" name="documentos" /> Certificado Academico
+                    <br>
+                    <input type="checkbox" name="documentos" /> Otros documentos (especifiquece)
+                    <input type="text" id="documentos" required />
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit"> Enviar Solicitud </button>
+    </form>
+</body>
+
+</html>
