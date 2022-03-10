@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+
+<body>
+    <form method="post" action="destination.html">
+        <table>
+            <caption style="background-color: darkcyan;"><b>IES Alixar Login</b></caption>
+            <tr>
+                <td>
+                    <label for="texto">Usuario:</label>
+                </td>
+                <td> 
+                    <input type="text" name="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="texto">Password:</label>
+                </td>
+                <td> 
+                    <input type="text" name="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Fecha de Nacimiento:</label>
+                </td>
+                <td> 
+                    <input type="date" name="date" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="texto">Curso de Matriculación:</label>
+                </td>
+                <td> 
+                    <select name="curso">
+                        <optgroup lebel="CFPGS"> 
+                            <option value="D11"> Primero DAW1</option>
+                            <option value="D12"> Primero DAW2</option>
+                            <option value="D21"> Segundo DAW1</option>
+                            <option value="D22"> Segundo DAW2</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rol"> Role: </label>
+                </td>
+                <td>
+                    <input type="radio" name="rol" /> Estudiente
+                    <br>
+                    <input type="radio" name="rol" /> Profesor
+                    <br>
+                    <input type="radio" name="rol" /> Apoyo
+                    <br>
+                    <input type="radio" name="rol" /> Staff
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comunicacion">Formas de Comunicación:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="comunicaciones"/> Mail
+                    <br>
+                    <input type="checkbox" name="comunicaciones"/> Teléfono
+                    <br>
+                    <input type="checkbox" name="comunicaciones"/> Correo ordinario
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit"> Enviar</button>
+                    <button type="submit"> Borrar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
