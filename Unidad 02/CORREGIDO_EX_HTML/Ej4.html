@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--CORRECCIONES:
+1. Correccion de la etiqueta form para el formulario 
+2. Introducir los errores de alineación introducciendo el formulario en una tabla-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        table, th, td {
+            border-style: outset;
+          }
+
+        #formulario{
+            border: none;
+        }
+
+        #num{
+            width: 200px;
+        }
+          
+    </style>
+</head>
+
+<body>
+    <h1>TRES EN RAYAS</h1>
+    <br>
+    <table >
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr> 
+            <td>1</td>
+            <td>
+                <img src="./imagenes/cruz.png" alt="Cruz"/>
+            </td>
+            <td></td>
+            <td>
+                <img src="./imagenes/check.png" alt="Check"/>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td>
+                <img src="./imagenes/cruz.png" alt="Cruz"/>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <img src="./imagenes/check.png" alt="Check"/>
+            </td>
+            <td></td>
+            <td>
+                <img src="./imagenes/cruz.png" alt="Cruz"/>
+            </td>
+        </tr>
+   
+    </table>
+
+    <br>
+
+   <form action="post">
+       <table id="formulario">
+           <thead id="formulario">
+               <td colspan="2" id="formulario" > Turno para jugador Uno</td>
+           </thead>
+           <tbody id="formulario">
+                <tr>
+                    <td id="formulario"> <label name="turnoFila"> Fila</label></td>
+                    <td id="formulario"><input type="number" name="turnoFila" id="num" min="1" max="4"></td>
+                </tr>
+                <tr>
+                    <td id="formulario"><label name="turnoColuma">Columnas</label></td></td>
+                    <td id="formulario"> <input type="number" size="30px" name="turnoColuma" id="num" min="1" max="4"></td>
+                </tr>
+           </tbody>
+           <tfoot  align="center">
+                <td id="formulario" colspan="2"> <button type="submit"> Enviar</button></td>
+           </tfoot>
+       </table>
+   </form>
+</body>
+</html>
