@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anidamiento de listas</title>
+    <style>
+        font {
+            font-family: cursive;
+            color: tomato;
+        }
+        #cicle {
+            list-style-type: circle;
+        }
+
+        #cuadrado {
+            list-style-type: square;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <font>Anidamiento de listas</font>
+    </h1>
+    <h2>Listas sin orden </h2>
+    <ul>
+        <li>Inicio</li>
+        <li>Sobre mí</li>
+        <li>Servicios
+            <ul id="cicle">
+                <li>Fontanería</li>
+                <li>Electricidad</li>
+                <li>Pintura
+                    <ul id="cuadrado">
+                        <li>Parking</li>
+                        <li>Trabajos en altura</li>
+                        <li>Domicilios privados</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Testimonios</li>
+        <li>Contactos</li>
+    </ul>
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li> Indicador numerico ordenado
+            <ol>
+                <li>uno</li>
+                <li>dos</li>
+            </ol>
+        </li>
+        <li>Indicador numerico inverso desde un numero indicado
+            <ol reversed start="3">
+                <li>cuatro</li>
+                <li>tres</li>
+                <li>dos</li>
+                <li>uno</li>
+            </ol>
+        </li>
+        <li>indicador alfabetico
+            <ol type="A">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        </li>
+        <li>Indicador romano
+            <ol type="i">
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+
+</html>

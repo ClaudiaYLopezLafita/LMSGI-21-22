@@ -1,0 +1,82 @@
+<!--
+Al formulario anterior le tienes que añadir los siguientes campos de información:
+
+Población, una lista desplegable con las opciones Alicante, Madrid, Sevilla y Valencia.
+Descripción, un área de texto multilínea.
+Además, tienes que asociar la etiqueta de cada control a su control para mejorar la usabilidad 
+y la accesibilidad.
+-->
+
+<!-- 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <form action="post">
+        <h1>Formulario 1 </h1>
+
+        <p>
+            <label for="name">Nonbre:</label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido">
+        </p>
+        <p>
+            <label for="genero">Sexo:</label>
+            <input type="radio" name="genero" value="H"> hombre
+            <input type="radio" name="genero" value="M" checked> mujer
+        </p>
+        <p>
+            <label for="email">Correo:</label>
+            <input type="email" id="email">
+        </p>
+
+        <p>
+            <label for="poblacion">Población:</label>
+            <select name="poblaciones">
+                <optgroup label="valencia">
+                    <option value="A" selected>Alicante</option>
+                    <option value="SG">Sagunto</option>
+                    <option value="TR">Torrent</option>
+                </optgroup>
+                <optgroup label="Andalucia">
+                    <option value="SV">Sevilla</option>
+                    <option value="HV">Huelva</option>
+                    <option value="CD">Cadiz</option>
+                    <option value="CB">Córdoba</option>
+                    <option value="JN">Jaén</option>
+                    <option value="MG">Málaga</option>
+                    <option value="AM">Almeria</option>
+                    <option value="GR">Granada</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripción</label>
+            <textarea name="area" id="descripcion" cols="60" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="condiciones"></label>
+            <input type="checkbox" id="condiciones"> Deseo recibir información sobre novedades y ofertas
+            <br>
+            <input type="checkbox" id="condiciones"> Declaro haber leido y aceptar las condicniones generales edl programa y la normativa sobre proteccion de datos             
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+</body>
+</html>
