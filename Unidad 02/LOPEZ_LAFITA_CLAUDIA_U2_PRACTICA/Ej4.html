@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        font {
+            color: blue;
+            font-weight: bold;
+        }
+
+        #error {
+            color: red;
+            font-weight: normal;
+        }
+
+        button {
+            width: 200px;
+            height: 20px;
+        }
+
+        div {
+            border: 4px solid blue;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Reservation Request</h1>
+        <form action="post">
+            <fieldset>
+                <legend>
+                    <font>General Information</font>
+                </legend>
+                <!-- Para las fechas podemos usar el type=date-->
+                <p>
+                    <label for="arrival">Arrival date:</label>
+                    <input type="text" name="arrival" id="arrival">
+                    <font id="error">Arrival date is invalid</font>
+                </p>
+                <!-- Para los numeros de noches podemos usar el type=number-->
+                <p>
+                    <label for="numNight">Nights</label>
+                    <input type="text" name="numNight" id="numNight">
+                    <font id="error">Nights must be a number</font>
+                </p>
+                <p>
+                    <label for="adul">Adults:</label>
+                    <select id="adul">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="child">Children</label>
+                    <select id="child">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <font>Preferences</font>
+                </legend>
+                <p>
+                    <label for="room">Room type:</label>
+                    <input type="radio" name="stand" id="room" checked> Standard
+                    <input type="radio" name="stand" id="room"> Business
+                    <input type="radio" name="stand" id="room"> Suite
+                </p>
+                <p>
+                    <label for="bed">Bed type:</label>
+                    <input type="radio" name="king" id="bed" checked> King
+                    <input type="radio" name="double" id="bed"> Double Double
+                </p>
+                <p>
+                    <label for="smok"></label>
+                    <input type="checkbox" name="smok" id="smok">Smoking
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <font>Contact Information</font>
+                </legend>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <font id="error">Name is required</font>
+                </p>
+                <!-- Para el correo electronico podemos usar el type=text-->
+                <p>
+                    <label for="mail">Email</label>
+                    <input type="email" name="mail" id="mail">
+                    <font id="error">Email address is invalid</font>
+                </p>
+                <!-- Para el numero de telefono podemos usar el type=text-->
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                    <font id="error">Phone number is invalid</font>
+                </p>
+            </fieldset>
+            <p>
+                <label for="option"></label>
+                <button type="submit" name="option" id="option1">Submit Reservation</button>
+                <button type="resert" name="option" id="option1">Clear</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
