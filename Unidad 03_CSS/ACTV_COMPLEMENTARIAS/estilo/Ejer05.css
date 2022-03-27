@@ -1,0 +1,19 @@
+.none li{
+  list-style-type: none;
+}
+
+.circulo{
+    list-style-type: circle;
+}
+
+.cuadrado{
+    list-style-type: square;
+}
+
+.romano{
+    list-style-type: lower-roman;
+}
+
+.griega{
+    list-style-type: lower-greek;
+}

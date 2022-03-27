@@ -1,0 +1,42 @@
+.blue {
+    color: blue;
+}
+
+.fuchsia {
+    color: fuchsia;
+}
+
+.green {
+    color: green;
+}
+
+.olive {
+    color: olive;
+}
+
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.red {
+    color: red;
+}
+
+.teal {
+    color: teal;
+}
+
+/*
+un td detras de un td
+*/
+td+td{
+    background-color: red;
+}
+
+td+td+td{
+    background-color: green;
+}
