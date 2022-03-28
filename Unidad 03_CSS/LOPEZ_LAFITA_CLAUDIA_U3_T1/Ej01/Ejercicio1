@@ -1,0 +1,17 @@
+1. El cuerpo (body) de la página tiene un estilo del fondo tan
+
+2. El encabezado h1 tiene el texto de color marron y con un tamaño de letra 20pt.
+
+3. La etiqueta hr (linea de separación) es de color azul oscuro
+
+4. La etiqueta p (es decir los párrafos) tiene un tamaño de letra 12pt y margen por la izquierda de 15px.
+
+5. los párrafor con la clase verse (p.verse) tiene las letras de color marron y un margen por la izquierda de 60 px.
+
+6. Los enlaces (a) en estado normal presentan un color verde (a:link)
+
+7. Los enlaces cuando han sido visitados con anterioridad tiene un estilo amarillo (a:visited)
+
+8. Cuando se pasa el cursor por encima del enlace (a: hover) el estilo es de color negro. 
+
+9. Cuando un enlace está activo, el enlace toma un estilo de color azul. 

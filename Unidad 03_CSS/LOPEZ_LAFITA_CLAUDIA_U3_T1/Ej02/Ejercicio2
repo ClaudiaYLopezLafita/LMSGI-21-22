@@ -1,0 +1,16 @@
+Esto se debe a que en el archivo css estilo se tiene definido los siguientes estilos para los párrafos.
+
+p {font-size:12pt; margin-left: 15px}
+
+En este primer caso estamos indicados que TODAS las etiquetas <p>, es decir lo párrafos, tiene que tener un tamaño de letra 12pt con un margen izquierdo se 15px.
+
+p.verse {color:maroon; margin-left: 60px}
+
+En este caso se indica que SOLO los párrafos que tienen la clase verse indicado deben de tener el siguiente estilo:
+- Letras con un color marron y el margen izquierdo debe de ser de 60px. Este caso mirando el html solo afecta a los dos primeros párrafos. 
+
+SOLUCION
+
+para que todos los párrafos tengan el mismo diseño que los dos primeros vale con poner en el css lo siguiente y eliminar el p.verse
+
+p {color:maroon; margin-left: 60px}
