@@ -1,0 +1,36 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .container img {
+    float: right;
+    margin: 0px 1em;
+    width: 20%;
+  }
+  
+  /**specifica si un elemento puede estar al lado de elementos flotantes que 
+  lo preceden o si debe ser movido (cleared) debajo de ellos. 
+  La propiedad clear aplica a ambos elementos flotantes y no flotantes.**/
+  #clear {
+    clear: right;
+  }
+  
+  /**La propiedad CSS overflow-y define qué se debe mostrar cuando el 
+  contenido se desborda de los extremos superior e inferior de un elemento en bloque.
+  
+  --> AUTO:Si el contenido se recorta dentro del área de padding, se vería igual 
+  que con la propiedad visible, pero aún determinado por un contexto de formato 
+  de bloque. Los navegadores de escritorio proveen barras de desplazamiento si 
+  el contenido se desborda. **/
+  .container:nth-of-type(3) {
+    overflow-y: auto;
+    height: 130px;
+  }
