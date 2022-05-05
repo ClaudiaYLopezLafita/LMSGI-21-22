@@ -1,0 +1,122 @@
+
+.contenedor{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.column{
+    column-count: 3;
+    margin-bottom: 29px;
+    column-gap: 35px;
+    margin-top: 25px;
+    width: 60%;
+    margin-left: 8%;
+}
+
+.column div{
+    border: 1px solid mediumvioletred;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.column div:first-child{
+    margin-bottom: 18px;
+}
+
+.column div:nth-child(2){
+    margin-bottom: 18px;
+}
+
+.column div p{
+    width: 58%;
+    text-align: center;
+    margin-left: 23%;
+}
+
+.column img{
+    width: 54%;
+    margin-left: 22%;
+    height: 65px;
+}
+
+.scroll_right{
+    float: right;
+}
+
+.scroll_right img{
+    width: 259px;
+}
+
+.scroll_right p{
+    margin-top: 0px;
+}
+
+#icon{
+    color: mediumvioletred;
+    z-index: 100;
+    position: absolute;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.principal div:nth-child(2) {
+    padding-left: 35%;
+    top: 58%;
+}
+
+.principal div:nth-child(3){
+    padding-left: 66%;
+    top: 45%;
+}
+
+.principal div:nth-child(4){
+    top: 45%;
+    padding-left: 1%;
+}
+
+.principal img{
+    width: 73%;
+}
+
+aside{
+    margin-left: 55%;
+    width: 145%;
+}
+
+aside img{
+    width: 4%;
+    text-align: le;
+}
+
+footer{
+    background-color: mediumvioletred;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header{
+    column-count: 2;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+header div:first-child img{
+    width: 55%;
+}
+
+nav{
+    background-color: mediumvioletred;
+    padding: 3px;
+    color: white;
+    font-weight: bolder;
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 16px;
+}
