@@ -1,0 +1,280 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url('../imagenes/layout4.jpg');
+    background-repeat: no-repeat; 
+    background-size: 117% 180% ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    box-shadow: 0px 0px 5px 1px black;
+    margin: 100px auto;
+    position: absolute;
+    z-index: 100;
+    top: -3%;
+    left: 11%;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif cursive;
+}
+
+.menu{
+    padding: 3%;
+    height: 10%;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.menu div:first-child{
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+.menu div:first-child em {
+    color: lightseagreen;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.main{
+    height: 85%;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:1%; 
+    background: #EAEEF2;
+    border-radius: 10px;
+    width: 97%;
+}
+
+.principal>div{
+    border-right: #5ab2ca 1px solid;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 11%;
+    margin-top: 10px;
+    margin-block-end: 10px;
+}
+
+.principal div:nth-child(2){
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    border-radius: 10px;
+    width: 68%;
+    background-color: grey;
+    font-size: xx-large;
+    padding-bottom: 0px;
+}
+
+.principal div img{
+    width: 101%;
+}
+
+.principal div:nth-child(2) div{
+    padding-left: 10%;
+    padding-bottom: 23%;
+}
+
+.principal div:nth-child(2) p:first-child{
+   transform: rotate(0deg);
+   color: lightseagreen;
+   margin-bottom: 0px;
+}
+
+.principal div:nth-child(2) pre{
+    transform: rotate(0deg);
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+
+ .principal div:nth-child(2) pre:nth-child(3){
+    font-size: medium;
+ } 
+
+.principal div p{
+    transform: rotate(-90deg );
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.principal div pre{
+    transform: rotate(-90deg );
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 30px;
+    height: 35%;
+    text-align: justify;
+    width: 99%;
+    font-style: italic;
+    margin-left: 1%;
+}
+
+.article div {
+    background-color:whitesmoke;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.article p {
+    padding: 7px;
+}
+
+#orange{
+    background-color: orangered;
+    border-radius: 10px;
+    width: 5%;
+}
+
+.triangulo { 
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent; 
+    border-bottom: 20px solid transparent; 
+    border-left: 20px solid orangered; 
+    position: absolute;
+    z-index: 100;
+    left: 7.5%;
+    top: 23%;
+}
+
+#orange h1{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 78%;
+    left: 36%;
+}
+
+#orange p{
+    position: absolute;
+    z-index:100;
+    top: 10%;
+    right: -31%;
+    font-size: larger;
+}
+
+#lightorange{
+    background-color: orange;
+    border-radius: 10px;
+    width: 5%;
+    padding-top: 18%;
+}
+
+#lightorange h1{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 78%;
+    left: 36%;
+}
+
+#lightorange p{
+    position: absolute;
+    z-index:100;
+    top: 15%;
+    right: -58%;
+    font-size: larger;
+}
+
+#yellow{
+    background-color: rgba(255, 255, 0, 0.616);
+    border-radius: 10px;
+    width: 5%;
+}
+
+#yellow pre{
+    position: absolute;
+    z-index:100;
+    top: 22%;
+    right: -109%;
+    font-size: larger;
+}
+
+#yellow h1{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 78%;
+    left: 36%;
+}
+
+#green{
+    background-color: greenyellow;
+    border-radius: 10px;
+    width: 5%;
+}
+
+#green h1{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 78%;
+    left: 36%;
+}
+
+#green pre{
+    position: absolute;
+    z-index:100;
+    top: 16%;
+    right: -67%;
+    font-size: larger;
+}
+
+#darkgreen{
+    background-color: green;
+    border-radius: 12px;
+    width: 5%;
+ }
+
+#darkgreen pre{
+    position: absolute;
+    z-index:100;
+    top: 25%;
+    right: -135%;
+    font-size: larger;
+}
+
+#darkgreen h1{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 78%;
+    left: 36%;
+}
+
+h3{
+    padding: 7px;
+    margin-bottom: -10px;
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 20% 48%;
+    justify-items: center;
+    
+}
+
+h3 img{
+    height: 18px;
+}
