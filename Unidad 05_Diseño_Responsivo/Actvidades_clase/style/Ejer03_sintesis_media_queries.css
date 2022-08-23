@@ -1,0 +1,41 @@
+@media mediatype [condiciones] {
+    .... /* Estilos para esas condiciones */ ...;
+  }
+
+  /* Estilos para todo tipo de pantallas con una anchura máxima
+de 576px*/
+@media all and (max-width: 576px) {
+  .....;
+}
+
+/* Estilos para pantallas con al menos 992px de anchura y que estén apaisadas (más ancho que alto)*/
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  ......;
+}
+
+/* Estilos sólo para pantallas que tengan al menos 768px de anchura*/
+@media only screen and (min-width: 768px) {
+  ......;
+}
+
+/*
+Los distintos tipos de valores que puedo tener para mediatype son:
+
+all
+screen (el más usado)
+tty (terminal)
+print (para impresoras)
+tv (para pantallas de televisión)
+projected (para proyectar contenidos)
+braille (para dispositivos para invidentes)
+etc...
+*/
+
+/*En cuanto a las condiciones que puedo consultar:
+
+width | min-width | max-width
+height | min-height | max-height
+orientation (landscape / portrait)
+aspect-ratio | min-aspect-ratio | max-aspect-ratio
+color | min-color | max-color
+*/
