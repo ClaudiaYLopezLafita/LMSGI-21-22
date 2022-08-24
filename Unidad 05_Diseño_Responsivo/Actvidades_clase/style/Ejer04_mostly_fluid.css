@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  .green {
+    background-color: green;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .orange {
+    background-color: orange;
+  }
+
+
+  /*para pantallas menores de 576px se apilan las clases verticalmente con una
+  anchura identica*/
+  
+  /* para pantallas con un minio de 576px y un máximo de 991px:
+  - La clase azul se posiciona encima de la clase naranje con las misma anchura
+  - las clases verde y amarillo se mantiene juntas encima de la clase nueva con una
+  nueva anchira (50%)  */
+  @media screen and (min-width: 576px) {
+    .green,
+    .yellow {
+      width: 50%;
+    }
+  }
+
+  /*para pantallas con una anchura de 992px y mas se dispondras las clases verde, 
+  amarilla y azul en al misma linea con una anchura de 33.3% las tres*/
+  @media screen and (min-width: 992px) {
+    .green,
+    .yellow,
+    .blue {
+      width: 33.33333%;
+    }
+  }

@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  
+  .container > div {
+    height: 300px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  /* para pantallas con minimmo una anchura de 576px  */
+  @media screen and (min-width: 576px) {
+    .red {
+      float: left;
+      width: 50%;
+    }
+    /*el div con clase rojo tendra una floar a izquierda con una anchuora del 50%*/
+  
+    .blue {
+      float: left;
+      width: 50%;
+    }
+    /*el div con clase acul tendra una floar a izquierda con una anchuora del 50%*/
+  
+    .yellow {
+      float: left;
+      width: 100%;
+    }
+    /*el div con clase amarillo tendra una floar a izquierda con una anchuora del 100%
+    se dispondra en una fila debajo de los dos div anteriores*/
+
+  }
+  
+/*Para pantallas de una anchura minima de 992px: los tres div se dispondra consecutivamente
+  per con anchuras diferentes: */
+  @media screen and (min-width: 992px) {
+    .red {
+      float: left;
+      width: 20%;
+    }
+  
+    .blue {
+      float: left;
+      width: 50%;
+    }
+  
+    .yellow {
+      float: left;
+      width: 30%;
+    }
+  }
