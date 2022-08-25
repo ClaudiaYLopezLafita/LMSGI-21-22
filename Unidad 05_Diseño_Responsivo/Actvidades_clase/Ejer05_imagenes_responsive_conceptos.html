@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Imagenes Responsive</title>
+
+    <link rel="stylesheet" href="style/conceptos_imagen_responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <p> En estos casos, si no nos importa la optimización es suficiente con usar una imagen de gran resolución y
+            dimensiones y acotarla dentro de un contenedor.</p>
+
+        <img src="img/imagen02.png" alt="imagen01">
+    </div>
+
+    <hr>
+
+    <p>Pero sin embargo, si nos importa la optimización utilzaremos los atributos scrset y/o sizes de la imagen que
+        queremos mostrar.
+        Por ejemplo: </p>
+    <!-- Considerando resolución: -->
+    <div class="container1">
+        <img src="img/imagen02.png" srcset="img/imagen01.png 2x, img/imagen02.png 1x" />
+    </div>
+
+    <!-- Considerando dimensiones: -->
+    <div class="container2">
+        <img src="img/imagen02.png" srcset="img/imagen01.png 2000w, img/imagen02.png 1000w"
+            sizes="(min-width: 960px) 960px,100vw" />
+    </div>
+
+    <hr>
+
+    <div class="art">
+        <p>La técnica de diseño responsivo Art Director consiste en elegir una u otra imagen utilizando la etiqueta
+            source dentro la etiqueta picture y sus atributos srcset para indicar la imagen y media que funciona de
+            manera similar a una media query.
+
+            Normalmente este diseño consiste en fotos que se acercan al objeto importante.
+
+            Al final, en casos reales siempre hay que combinar ambas técnicas y probar, en la medida de lo posible, en
+            dispositivos reales, incluidos móviles con Retina Display.
+        </p>
+
+        <picture>
+            <source media="(min-width: 576px)" srcset="img/imagen01.png" />
+            <source media="(max-width: 575px)" srcset="img/imagen02.png" />
+            <img src="img/imagen02.png" />
+            <!-- En caso de no soportar picture -->
+        </picture>
+    </div>
+</body>
+
+</html>
