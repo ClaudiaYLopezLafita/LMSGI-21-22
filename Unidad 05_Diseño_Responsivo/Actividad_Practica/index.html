@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad práctica</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <h1>Responsivo</h1>
+            </div>
+            <div>
+                <div>INICIO</div>
+                <div>NOSOTROS</div>
+                <div>CONTACTO</div>
+            </div>
+        </nav>
+        <header>
+            <div class="galery">
+                <img src="img/img1.jpg" alt="img1">
+                <img src="img/img2.jpg" alt="img2">
+                <img src="img/img3.jpg" alt="img3">
+                <img src="img/img4.jpg" alt="img4">
+                <img src="img/img5.jpg" alt="img5">
+                <img src="img/img6.jpg" alt="img6">
+                <img src="img/img7.jpg" alt="img7">
+                <img src="img/img8.jpg" alt="img8">
+                <img class="hidden" src="img/img9.jpg" alt="img9"> 
+                <!-- indicamos cual queremos que desaparezca-->
+            </div>
+            <div class="info">
+                <h3>PROYECTO PRACTICO</h3>
+                <h2>DISEÑO RESPONSIVO</h2>
+                <p>Actividad práctica para el Curso "Diseño Responsivo" de la plataforma de formación on-line
+                    @openwebinars
+                    impartidado por @pekechis </p>
+                <p>Establece dos breakpoints, a 576px y a 992px, en los que se produce un cambio en el layout de la
+                    página. La ultima imagen desaparece cuando bajamos de 992px.
+                </p>
+                <p>El proceso de desarrollo ha sido llevado a cabo empezando desde el diseño para pantallas pequeñas</p>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2>NOVEDADES</h2>
+            </div>
+            <div>
+                <h4>15 de Septiembre</h4>
+                <h4>Novedad 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta enim mollitia deserunt
+                    consequatur eius porro voluptatum earum cumque sit, reprehenderit consectetur, placeat eveniet at
+                    libero aliquid sapiente dolor quod!</p>
+            </div>
+            <div>
+                <h4>15 de Octubre</h4>
+                <h4>Novedad 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta enim mollitia deserunt
+                    consequatur eius porro voluptatum earum cumque sit, reprehenderit consectetur, placeat eveniet at
+                    libero aliquid sapiente dolor quod!</p>
+            </div>
+            <div>
+                <h4>15 de Noviembre</h4>
+                <h4>Novedad 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta enim mollitia deserunt
+                    consequatur eius porro voluptatum earum cumque sit, reprehenderit consectetur, placeat eveniet at
+                    libero aliquid sapiente dolor quod!</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Necesitamos una funcion que nos permira capturar los eventos de mostrar y ocultar-->
+    <script>
+        $(function() {
+           
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu_item").show();
+            }
+            });
+        });
+    </script>
+</body>
+</html>
